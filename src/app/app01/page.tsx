@@ -1,6 +1,6 @@
 import ErrorButton from "./ErrorButton";
 async function GetData() {
-    await new Promise((resolve) => setTimeout(resolve, 3000));
+    //await new Promise((resolve) => setTimeout(resolve, 3000));
     return {name: '맛있는 파스타 집'};
 }
 

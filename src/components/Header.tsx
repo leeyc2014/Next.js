@@ -16,6 +16,7 @@ export default function Header() {
           <li><Link href="/lotto" className='hover:font-bold hover:bg-blue-50 p-2 rounded-sm hover:text-blue-900'>로또</Link></li>
           <li><Link href="/festival" className='hover:font-bold hover:bg-blue-50 p-2 rounded-sm hover:text-blue-900'>부산축제</Link></li>
           <li><Link href="/todolist" className='hover:font-bold hover:bg-blue-50 p-2 rounded-sm hover:text-blue-900'>할일목록</Link></li>
+          <li><Link href="/restaurant" className='hover:font-bold hover:bg-blue-50 p-2 rounded-sm hover:text-blue-900'>맛집</Link></li>
           </>}
         </ul>
       </nav>

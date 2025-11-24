@@ -8,8 +8,8 @@ export default function App01Layout({children,} : {children : React.ReactNode;})
                 <nav>
                     <ul className="m-5">
                         <li className="pb-2"><Link href="/app01/junggu" className="hover:text-blue-800">중구</Link></li>
-                        <li className="pb-2">동구</li>
-                        <li className="pb-2">서구</li>
+                        <li className="pb-2"><Link href="/app01/donggu" className="hover:text-blue-800">동구</Link></li>
+                        <li className="pb-2"><Link href="/app01/seogu" className="hover:text-blue-800">서구</Link></li>
                     </ul>
                 </nav>
             </aside>
