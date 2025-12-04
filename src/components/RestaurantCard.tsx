@@ -8,10 +8,10 @@ interface RestaurantProps {
 
 export default function RestaurantCard({ restaurant } : RestaurantProps) {
     return (
-        <Link href={`/restaurant/${restaurant.UC_SEQ}`} className="border-2 border-gray-200 flex flex-col p-5 shadow-sm">
+        <Link href={`/restaurant/${restaurant.UC_SEQ}`} className="border-2 border-gray-200 flex flex-col p-5 hover:shadow-lg rounded-lg">
             {/* {restaurant.MAIN_IMG_THUMB && <img className="rounded-lg h-60 w-full" src={restaurant.MAIN_IMG_THUMB} alt={restaurant.TITLE} />} */}
             <div className="relative w-full h-48 bg-gray-200">
-                {restaurant.MAIN_IMG_NORMAL ? (<Image src={restaurant.MAIN_IMG_NORMAL} alt={restaurant.TITLE} fill sizes="(max-width: 768px) 100vw, 50vw" style={{objectFit : 'cover'}} priority />) : (<div className="w-full flex justify-center items-center">이미지 없음</div>)}
+                {(restaurant.MAIN_IMG_NORMAL && restaurant.MAIN_IMG_NORMAL != 'null') ? (<Image src={restaurant.MAIN_IMG_NORMAL} alt={restaurant.TITLE} fill sizes="(max-width: 768px) 100vw, 50vw" style={{objectFit : 'cover'}} priority />) : (<div className="w-full flex justify-center items-center">이미지 없음</div>)}
             </div>
             <div className="flex flex-col justify-between p-5 mt-5">
                 <p className="text-2xl font-bold pb-2">{restaurant.TITLE}</p>
